@@ -1,0 +1,11 @@
+<p id="notice"><%= notice %></p>
+<%# .reject{|date| date.sunday? || date.saturday?} %>
+<% (Date.today.at_beginning_of_month..Date.today.end_of_month).each do |day|%>
+  <div class="week_days">
+    <p class="title">
+      <%= day %> - <%= day.strftime("%A") %>
+    </p>
+  </div>
+<% end %>
+<br>
+

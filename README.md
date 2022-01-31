@@ -1,24 +1,38 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Ruby on Rails - Schedule lunch calendar
 
-Things you may want to cover:
+## Runing the project
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
+* Dependencies install
+  bundle install
 
 * Database creation
+  rake db:drop db:create db:migrate db:seed
 
-* Database initialization
+* Run the project
+  rails serve or rails s
 
-* How to run the test suite
+* Run the tests suite
+  rspec ./spec
 
-* Services (job queues, cache servers, search engines, etc.)
+## System structure
 
-* Deployment instructions
+* Rules
+    A lunch menu has many products. A product can be associated with many lunch menu.
+    A menu cannot be sequencial repeat if there are more than one lunch menu
 
-* ...
+* Structure
+  *PK: Primary key
+  *FK: Foreign key
+
+  The lunch menu has the following attributes:
+  Id: PK
+  Name: string(100 characters)
+
+  The product has the following attributes:
+  Id: PK
+  lunch_menu_id: FK
+  Name: string(100 characters)
+  Calories: decimal
+  Weight: decimal
