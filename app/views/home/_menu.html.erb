@@ -1,0 +1,20 @@
+<div class="week_days">
+  <p class="title">
+    <%= date %> - <%= date.strftime("%A") %>
+  </p>
+  <% if menu %>
+    <div class="menu_infs">
+      <p>
+        Menu: <%= menu.name %>
+      </p>
+      <p>
+        Calories: <%= menu.calculate_calories %>
+      </p>
+      <p>
+        Weight: <%= menu.calculate_weight %>g
+      </p>
+    </div>
+  <% end %>
+</div>
+
+

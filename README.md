@@ -29,7 +29,7 @@ Ruby on Rails - Schedule lunch calendar
   The lunch menu has the following attributes:
   Id: PK
   Name: string(100 characters)
-  Date: date
+  date_of_lunch: date
 
   The product has the following attributes:
   Id: PK
