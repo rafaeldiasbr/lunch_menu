@@ -1,10 +1,11 @@
 # README
 
-Ruby on Rails - Schedule lunch calendar
+- Schedule lunch calendar
 
 ## Runing the project
 
 * Dependencies install
+* 
   bundle install
 
 * Database creation
@@ -19,21 +20,21 @@ Ruby on Rails - Schedule lunch calendar
 ## System structure
 
 * Rules
-    A lunch menu has many products. A product can be associated with many lunch menu.
-    A menu cannot be sequencial repeat if there are more than one lunch menu
+  * A lunch menu has many products. A product can be associated with many lunch menu.
+  * A menu cannot be sequencial repeat if there are more than one lunch menu
 
 * Structure
-  *PK: Primary key
-  *FK: Foreign key
+  * PK: Primary key
+  * FK: Foreign key
 
-  The lunch menu has the following attributes:
-  Id: PK
-  Name: string(100 characters)
-  date_of_lunch: date
+  * The lunch menu has the following attributes:
+    * Id: PK
+    * Name: string(100 characters)
+    * date_of_lunch: date
 
-  The product has the following attributes:
-  Id: PK
-  lunch_menu_id: FK
-  Name: string(100 characters)
-  Calories: decimal
-  Weight: decimal
+  * The product has the following attributes:
+    * Id: PK
+    * lunch_menu_id: FK
+    * Name: string(100 characters)
+    * Calories: decimal
+    * Weight: decimal
